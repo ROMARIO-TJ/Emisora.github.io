@@ -136,7 +136,7 @@ h2::before{
     
     h2{
         position: relative;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #222;
     }
    
@@ -184,3 +184,7 @@ h2::before{
     }
     
 }
+aframe.cuadroBordeado{
+    background-color: #00f519;
+}
+
