@@ -26,6 +26,7 @@ header {
 }
 .prueva{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -43,7 +44,7 @@ h2::before{
     white-space: nowrap;
     color: #fff;
     overflow: hidden;
-    border-right: 4px solid #fff;
+    /* border-right: 4px solid #fff; */
     animation:animate 8s linear infinite;
     filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 50px #02fb0f);
 
