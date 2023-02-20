@@ -109,6 +109,10 @@ h2::before{
     padding: 13px;
     cursor: pointer;
 }
+.opc a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .navegacion.active .menu{
     max-width: 500px;
@@ -126,6 +130,76 @@ h2::before{
         transform: translatex(0px);
     }
 }
+
+/*negocios*/
+.negocios{
+    padding-top: 40px;
+    padding-bottom:80px ;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.car{
+    width: 300px;
+    height: 200px; 
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.img__car{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.inf{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    background-color: #22222277;
+    color: #fff;
+    z-index: 1;
+}
+.car:hover .inf{
+    transition: 0.5s;
+    right: 0;
+   
+}
+.iconos{
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2,35px);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.img__iconos{
+    background-color: rgba(240, 248, 255, 0.309);
+    border-radius: 100%;
+    padding: 4px;
+    width: 20px;
+}
+.img__iconos:hover{
+    filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 50px #02fb0f);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.parrafo__inf{
+    display: grid;
+    grid-column: 4/1;
+    grid-row: 4/4;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+   
+}
+  
+
 
 @media (max-width:500px){
     header {
