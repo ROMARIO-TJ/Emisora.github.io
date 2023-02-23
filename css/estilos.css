@@ -157,7 +157,7 @@ h2::before {
     height: 200px;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .img__car {
@@ -174,26 +174,65 @@ h2::before {
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
     height: 100%;
-    right: -100%;
+    right: 0;
     background-color: #22222277;
     color: #fff;
     z-index: 1;
 }
 
-.car:hover .inf {
+/*.car:hover .inf {
     transition: 0.5s;
     right: 0;
 
-}
+}*/
 
 .iconos {
-
     display: grid;
-    grid-column: 1/2;
-    grid-template-columns: repeat(2, 35px);
+    grid-column: 1/4;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-items: center;
-    justify-content: center;
+   
+}
+.cont__inconos{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    transition: max-width 0.5s ease;
+}
+.cont__compartir{
+    display: flex;
+    align-items: center;
+}
+.cont__ftw{
+    display: flex;
+    padding: 2px;
+    max-width: 0;
+    overflow: hidden;
+}
+.cont__ftw a{
+    display: flex;
+}
+.cont__inconos.active .cont__ftw {
+    max-width: 300px;
+    animation: fede02 1s ease-in-out;
+
+}
+
+@keyframes fede02 {
+    from {
+        opacity: 0;
+        transform: translatex(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+.cont__megusta{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 .img__iconos {
