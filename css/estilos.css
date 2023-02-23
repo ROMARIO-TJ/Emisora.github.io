@@ -157,7 +157,7 @@ h2::before {
     height: 200px;
     position: relative;
     cursor: pointer;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .img__car {
@@ -174,17 +174,17 @@ h2::before {
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
     height: 100%;
-    right: 0;
+    right: -100%;
     background-color: #22222277;
     color: #fff;
     z-index: 1;
 }
 
-/*.car:hover .inf {
-    transition: 0.5s;
+.car:hover .inf {
+    transition: 0.8s;
     right: 0;
 
-}*/
+}
 
 .iconos {
     display: grid;
