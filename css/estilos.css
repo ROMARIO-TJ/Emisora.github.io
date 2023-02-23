@@ -328,23 +328,184 @@ h2::before {
     position: fixed;
     right: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     overflow: hidden;
-   
+
 }
 
 .cuadroBordeado {
     width: 100%;
 }
+
+/*contacto*/
+
+.contacto {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(350px, 100%),1fr));
+    gap: 30px;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
+.contenido_cont {
+    width: 100%;
+    display: contents;
+
+}
+
+.inf_cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.inf_cont::before {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(324, 2%, 51%, 0.664)), url();
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.655), hsla(315, 2%, 42%, 0.737)), url(../img/escribiendo.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.usuario {
+    background: #fff;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario img {
+    width: 90%;
+    border-radius: 100%;
+}
+
+.infcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo__usuario {
+    color: #fff;
+}
+
+.correo__tel {
+    color: #fff;
+    display: flex;
+    gap: 0.5em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    height: auto;
+
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+input {
+    padding: 15px 0 15px 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: solid 2px rgba(140, 138, 138, 0.97);
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    max-width: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: -webkit-fill-available;
+    min-width: 200px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: solid 2px rgba(140, 138, 138, 0.97);
+
+}
+
+
+input:focus {
+    outline: 0;
+}
+
+textarea:focus {
+    outline: 0;
+
+}
+.mensaje__enviar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn__enviar02 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#boton {
+    width: 30%;
+    margin: 10px;
+    background-color: #afb3b69f;
+    border: solid 4px transparent;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.261);
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#boton:hover {
+    filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 00px #06ed34);
+    transition: 0.5s;
+}
+
+
+/*fin contacto*/
+
 /*footer*/
 
 footer {
     background-color: #fff;
     padding: 50px;
-    
+
 }
-.pie_pagina{
-  font-size: 1rem;
+
+.pie_pagina {
+    font-size: 1rem;
 }
 
 .listas {
@@ -359,9 +520,10 @@ footer {
 .box__footer1 {
     align-self: center;
     justify-items: center;
-    text-align:left;
+    text-align: left;
 }
-.titulo__footer{
+
+.titulo__footer {
     text-align: left;
 }
 
@@ -392,19 +554,21 @@ a {
 }
 
 .sociales {
-   
+
     padding: 10px;
     display: grid;
     justify-items: center;
-    
+
 }
-.cons{
-   
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 0.5rem;
+
+.cons {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
-.cons a{
+
+.cons a {
     color: #00f90c;
     padding: 0;
     display: grid;
@@ -412,11 +576,11 @@ a {
     padding: 10px;
     border-radius: 50%;
     border: #000 solid 0.5px;
-    
+
 
 }
 
-#iconos{
+#iconos {
     display: grid;
     margin: auto;
 }
@@ -431,6 +595,7 @@ a {
 
 
 /*Fin footert*/
+
 
 @media (max-width:900px) {
 
@@ -470,13 +635,15 @@ a {
     .servicio-ind img {
         width: 90%;
     }
+
     /*fooret*/
     .listas {
         display: none
     }
-    .pie_pagina{
+
+    .pie_pagina {
         font-size: 0.8rem;
-      }
+    }
 
 }
 
