@@ -209,7 +209,7 @@ h2::before {
 .cont__ftw {
     display: flex;
     max-width: 0;
-    overflow:hidden ;
+    overflow: hidden;
     transition: max-width 0.5s ease;
 }
 
@@ -240,7 +240,7 @@ h2::before {
 
 .img__iconos:hover {
     filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 50px #02fb0f);
-    background-color:#fff;
+    background-color: #fff;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -530,16 +530,24 @@ a {
 }
 
 .cons a {
-    color: #00f90c;
+    color: #0c0c0c;
     padding: 0;
     display: grid;
     justify-content: center;
     padding: 10px;
     border-radius: 50%;
-    border: #000 solid 0.5px;
-
+    border: solid 1px #222;
 
 }
+
+.cons a:hover {
+    color: #36f806;
+    transition: 0.5s;
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px #86841a) drop-shadow(0 0 25px #0d8822);
+    transition: 0.5s;
+}
+
 
 #iconos {
     display: grid;
@@ -697,7 +705,7 @@ a {
         font-size: 1rem;
     }
 
-    
+
 }
 
 @media (max-width:300px) {
