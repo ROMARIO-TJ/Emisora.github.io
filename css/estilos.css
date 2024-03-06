@@ -156,7 +156,6 @@ h2::before {
     width: 300px;
     height: 200px;
     position: relative;
-    cursor: pointer;
     overflow: hidden;
 }
 
@@ -178,6 +177,7 @@ h2::before {
     background-color: #22222277;
     color: #fff;
     z-index: 1;
+    transition: 0.8s;
 }
 
 .car:hover .inf {
@@ -208,9 +208,9 @@ h2::before {
 
 .cont__ftw {
     display: flex;
-    padding: 2px;
     max-width: 0;
     overflow: hidden;
+    transition: max-width 0.5s ease;
 }
 
 .cont__ftw a {
@@ -219,21 +219,10 @@ h2::before {
 
 .cont__inconos.active .cont__ftw {
     max-width: 300px;
-    animation: fede02 1s ease-in-out;
+    transition: max-width 0.5s ease;
 
 }
 
-@keyframes fede02 {
-    from {
-        opacity: 0;
-        transform: translatex(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translatex(0px);
-    }
-}
 
 .cont__megusta {
     display: flex;
@@ -246,10 +235,12 @@ h2::before {
     border-radius: 100%;
     padding: 4px;
     width: 20px;
+    cursor: pointer;
 }
 
 .img__iconos:hover {
     filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 50px #02fb0f);
+    background-color: #fff;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -539,16 +530,24 @@ a {
 }
 
 .cons a {
-    color: #00f90c;
+    color: #0c0c0c;
     padding: 0;
     display: grid;
     justify-content: center;
     padding: 10px;
     border-radius: 50%;
-    border: #000 solid 0.5px;
-
+    border: solid 1px #222;
 
 }
+
+.cons a:hover {
+    color: #36f806;
+    transition: 0.5s;
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px #86841a) drop-shadow(0 0 25px #0d8822);
+    transition: 0.5s;
+}
+
 
 #iconos {
     display: grid;
@@ -706,7 +705,7 @@ a {
         font-size: 1rem;
     }
 
-    
+
 }
 
 @media (max-width:300px) {
