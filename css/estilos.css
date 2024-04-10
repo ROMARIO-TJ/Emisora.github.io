@@ -28,7 +28,7 @@ header {
     position: relative;
     background: #000000;
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(324, 2%, 51%, 0.664)), url();
-    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(312, 2%, 42%, 0.664)), url(../img/nosotros.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(312, 2%, 42%, 0.664)), url(../img/igi-2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -147,103 +147,31 @@ h2::before {
 
 .negocios {
     gap: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    
+   
 }
 
 .car {
+    display: flex;
+    margin: auto;
     width: 300px;
     height: 200px;
     position: relative;
-    overflow: hidden;
+    grid-column: 2/2;
+    
+
 }
 
 .img__car {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
-}
-
-.inf {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 100%;
-    height: 100%;
-    right: -100%;
-    background-color: #22222277;
-    color: #fff;
-    z-index: 1;
-    transition: 0.8s;
-}
-
-.car:hover .inf {
-    transition: 0.8s;
-    right: 0;
-
-}
-
-.iconos {
-    display: grid;
-    grid-column: 1/4;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-
-}
-
-.cont__inconos {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    transition: max-width 0.5s ease;
-}
-
-.cont__compartir {
-    display: flex;
-    align-items: center;
-}
-
-.cont__ftw {
-    display: flex;
-    max-width: 0;
-    overflow: hidden;
-    transition: max-width 0.5s ease;
-}
-
-.cont__ftw a {
-    display: flex;
-}
-
-.cont__inconos.active .cont__ftw {
-    max-width: 300px;
-    transition: max-width 0.5s ease;
-
+  
 }
 
 
-.cont__megusta {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-.img__iconos {
-    background-color: rgba(240, 248, 255, 0.309);
-    border-radius: 100%;
-    padding: 4px;
-    width: 20px;
-    cursor: pointer;
-}
-
-.img__iconos:hover {
-    filter: drop-shadow(0 0 20px #00f519) drop-shadow(0 0 50px #02fb0f);
-    background-color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-}
 
 .parrafo__inf {
     display: grid;
@@ -252,6 +180,7 @@ h2::before {
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    text-align: center;
 
 }
 
