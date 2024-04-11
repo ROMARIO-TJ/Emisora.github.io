@@ -172,11 +172,17 @@ h2::before {
 }
 .descargar{
     cursor: pointer;
-    margin: 20px;
+    margin: 40px auto;
+    background-color: #068611;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 50%;
 }
 .descargar:hover{
     cursor: pointer;
+    background-color: #fff;
     color: #02fb0f;
+    border:  #000 1px solid;
     
 }
 
